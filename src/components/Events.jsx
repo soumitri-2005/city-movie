@@ -1,33 +1,28 @@
 import React, { useState } from "react";
-import event1 from "../assets/event-vdos/event1.mp4";
-import event2 from "../assets/event-vdos/event2.mp4";
-import event3 from "../assets/event-vdos/event3.mp4";
-import event4 from "../assets/event-vdos/event4.mp4";
-import event5 from "../assets/event-vdos/event5.mp4";
 
 const videos = [
   {
-    src: event1,
+    src: "/event-vdos/event1.mp4",
     title: "Wedding Vibes",
     subtitle: "Joyful moments",
   },
   {
-    src: event3,
+    src: "/event-vdos/event3.mp4",
     title: "Post-wedding Shoot",
     subtitle: "Memories in making",
   },
   {
-    src: event2,
+    src: "/event-vdos/event2.mp4",
     title: "Birthday Bash",
     subtitle: "Fun and laughter",
   },
   {
-    src: event4,
+    src: "/event-vdos/event4.mp4",
     title: "Bridal Shoot",
     subtitle: "Elegance and grace",
   },
   {
-    src: event5,
+    src: "/event-vdos/event5.mp4",
     title: "Haldi Ceremony",
     subtitle: "Colorful traditions",
   },
