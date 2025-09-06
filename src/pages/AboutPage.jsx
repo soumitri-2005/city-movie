@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import aboutImg from "../assets/hero-images/scenery3.JPG";
+import aboutImg from "../assets/hero-images/img3.JPG";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
