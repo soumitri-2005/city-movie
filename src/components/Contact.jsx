@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex justify-between items-center flex-col md:flex-row h-[37vh] px-1 relative mb-20 sm:mb-0"
+      className="flex justify-between items-center flex-col md:flex-row h-[37vh] px-4 py-2 relative mb-20 sm:mb-0"
     >
       <div className="mx-[2rem]">
         <h1 className="text-[2rem] sm:text-[4rem] xl:text-[7rem]  mt-5 font-[550] text-[var(--maroon-color)]">
@@ -81,7 +81,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="Write your message.."
+                  placeholder="Write your message..."
                   required
                   className="w-full h-[70px] resize-none bg-white/50 backdrop-blur-md border border-white/30 rounded-md px-3 py-2 text-base text-black mt-1 focus:outline-none  "
                 ></textarea>

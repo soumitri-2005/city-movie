@@ -19,8 +19,11 @@ const Footer = () => {
               <LocationPinIcon fontSize="small" className="mr-1" />
               CDA, Sec-10, Cuttack, Odisha
             </p>
-            <p className="text-[11px] sm:text-[12px] mt-1 font-[500]">
-              Copyright &copy; 2025 My Website. All rights reserved.
+            <p className="text-[11px] sm:text-[12px] mt-1 font-semibold">
+              Mob No: +91-9437208362
+            </p>
+            <p className="text-[11px] sm:text-[12px] mt-3 font-[500]">
+              Copyright &copy; 2025 City Movie. All rights reserved.
             </p>
           </div>
 
