@@ -4,7 +4,7 @@ const AlbumsCards = ({ album1, album2, onImageClick }) => {
   return (
     <>
       <div
-        className="w-full border-3 border-[var(--maroon-color)] sm:w-1/2 h-full relative transition-all rounded-xl overflow-hidden cursor-pointer"
+        className="w-full border-2 border-[var(--maroon-color)] sm:w-1/2 h-full relative transition-all rounded-xl overflow-hidden cursor-pointer"
         onClick={() => onImageClick(album1)}
       >
         <img
