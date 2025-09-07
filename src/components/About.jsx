@@ -29,7 +29,7 @@ const About = () => {
           <img
             src={profilePic}
             alt="Mrutyunjaya Mishra"
-            className="w-60 sm:w-72 md:w-96 rounded-2xl shadow-[10px_10px_0px_var(--gold-color)] object-cover"
+            className="w-60 sm:w-72 md:w-[28rem] rounded-2xl shadow-[10px_10px_0px_var(--gold-color)] object-cover"
           />
         </div>
       </div>
