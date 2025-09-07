@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Masonry from "../components/Masonry";
 import { galleryImgs } from "../assets/gallery-pictures/galleryImgs";
 
 const GalleryPage = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
   const items = [
     {
       id: "1",
@@ -247,7 +249,6 @@ const GalleryPage = () => {
   ];
   return (
     <>
-      {/* Gallery Section */}
       <Masonry
         items={items}
         ease="power3.out"
@@ -258,7 +259,22 @@ const GalleryPage = () => {
         hoverScale={0.95}
         blurToFocus={true}
         colorShiftOnHover={false}
+        onImageClick={(img) => setSelectedImg(img)}
       />
+
+      {/* Lightbox / Modal */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-[var(--maroon-color)]/30 backdrop-blur-2xl flex justify-center items-center z-50"
+          onClick={() => setSelectedImg(null)}
+        >
+          <img
+            src={selectedImg}
+            alt="Preview"
+            className="max-h-[70%] max-w-[70%] rounded-2xl shadow-lg"
+          />
+        </div>
+      )}
     </>
   );
 };

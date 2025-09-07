@@ -60,6 +60,7 @@ const Masonry = ({
   hoverScale = 0.95,
   blurToFocus = true,
   colorShiftOnHover = false,
+  onImageClick = () => {},
 }) => {
   const columns = useMedia(
     [
@@ -207,7 +208,7 @@ const Masonry = ({
             data-key={item.id}
             className="absolute box-content"
             style={{ willChange: "transform, width, height, opacity" }}
-            onClick={() => window.open(item.url, "_blank", "noopener")}
+            onClick={() => onImageClick?.(item.img)} // 👈 pass image back
             onMouseEnter={(e) => handleMouseEnter(item.id, e.currentTarget)}
             onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
           >

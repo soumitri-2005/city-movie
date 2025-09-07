@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import album1 from "../assets/album-pictures/album1.jpg";
 import album2 from "../assets/album-pictures/album2.jpg";
@@ -21,6 +21,8 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
 const AlbumsPage = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
+
   const albums = [
     { image1: album1, image2: album2 },
     { image1: album3, image2: album4 },
@@ -68,11 +70,28 @@ const AlbumsPage = () => {
               key={index}
               className="album-card w-full h-[200px] mb-4 flex flex-col sm:flex-row gap-4"
             >
-              <AlbumsCards album1={album.image1} album2={album.image2} />
+              <AlbumsCards
+                album1={album.image1}
+                album2={album.image2}
+                onImageClick={(img) => setSelectedImg(img)}
+              />
             </div>
           ))}
         </div>
       </div>
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-[var(--maroon-color)]/30 backdrop-blur-2xl flex justify-center items-center z-50"
+          onClick={() => setSelectedImg(null)} // close on background click
+        >
+          <img
+            src={selectedImg}
+            alt="Preview"
+            className="max-h-[90%] max-w-[90%] rounded-2xl shadow-lg"
+          />
+        </div>
+      )}
+
       <Contact />
       <Footer />
     </>
