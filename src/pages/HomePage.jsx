@@ -14,7 +14,7 @@ const HomePage = () => {
       <div>
         <div
           style={{
-            height: "calc(100vh - 14vh)",
+            height: "calc(100vh - 13vh)",
             position: "relative",
             overflow: "hidden",
             marginTop: "17px",

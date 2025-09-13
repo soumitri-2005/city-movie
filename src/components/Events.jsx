@@ -12,6 +12,11 @@ const videos = [
     subtitle: "Memories in making",
   },
   {
+    src: "/event-vdos/event6.mp4",
+    title: "Reception  Ceremony",
+    subtitle: "Bound by Love",
+  },
+  {
     src: "/event-vdos/event2.mp4",
     title: "Birthday Bash",
     subtitle: "Fun and laughter",
@@ -51,7 +56,7 @@ const Events = () => {
           <div
             key={i}
             className={`relative m-1 cursor-pointer rounded-2xl overflow-hidden transition-all duration-500 drop-shadow-sm ${
-              active === i ? "flex-[6]" : "flex-[1]"
+              active === i ? "flex-[7]" : "flex-[1]"
             }`}
             onClick={() => setActive(i)}
           >
