@@ -78,7 +78,7 @@ export function NavbarDemo() {
           <div className="flex items-center gap-4">
             <button
               onClick={handleScrollToContact}
-              className={`px-4 py-2 rounded-2xl text-sm font-[550] shadow-md hover:shadow-lg transition ${
+              className={`px-4 py-2 rounded-2xl text-sm font-[550] shadow-md hover:shadow-lg transition cursor-pointer ${
                 visible
                   ? "bg-[var(--maroon-color)] text-[var(--gold-color)]"
                   : "bg-[var(--maroon-color)] text-[var(--gold-color)]"
@@ -123,7 +123,7 @@ export function NavbarDemo() {
                   handleScrollToContact();
                   setIsMobileMenuOpen(false);
                 }}
-                className={`w-full px-4 py-2 rounded-2xl text-sm font-[550] shadow-md hover:shadow-lg transition ${
+                className={`w-full px-4 py-2 rounded-2xl text-sm font-[550] shadow-md hover:shadow-lg transition cursor-pointer ${
                   visible
                     ? "bg-[var(--maroon-color)] text-[var(--gold-color)]"
                     : "bg-[var(--maroon-color)] text-[var(--gold-color)]"

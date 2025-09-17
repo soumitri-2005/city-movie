@@ -88,7 +88,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-green-600 p-2 text-[0.8rem] sm:text-[1rem] text-[var(--maroon-color)] font-semibold h-[43px] rounded-md mt-[0.55rem] active:scale-95 hover:bg-[var(--maroon-color)] hover:text-[var(--gold-color)] transition-all duration-300 ease-in-out"
+                className="bg-green-600 p-2 text-[0.8rem] sm:text-[1rem] text-[var(--maroon-color)] font-semibold h-[43px] rounded-md mt-[0.55rem] active:scale-95 hover:bg-[var(--maroon-color)] hover:text-[var(--gold-color)] transition-all duration-300 ease-in-out cursor-pointer"
               >
                 Send Message
               </button>
